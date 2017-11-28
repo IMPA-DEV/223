@@ -24,6 +24,7 @@ for ($i=0;$i<count($out[0]);$i++)
     $advertising .= "<tr><td class=\"bold\">".str_replace($start, $finish, $out[1][$i]).':</td><td>'.str_replace($repl, $replto, $out[2][$i])."</td></tr>";
 }
 
+//fucking fuck in fuck
 
 // текст письма
 $message .= '
