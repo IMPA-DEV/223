@@ -1,0 +1,199 @@
+//variables
+$lato: 'Lato', sans-serif
+$catamaran: 'Catamaran', sans-serif
+$aqua: #1ccad8
+$main: #F7F9F9
+$gray: #b0bfd8
+$black: #0c1b33
+//import
+@import "normalize.css"
+
+//global styles
+*
+  box-sizing: border-box
+  &:focus
+    outline: none
+  &::selection
+    background: rgba(176, 191, 216, 0.5)
+body
+  font-family: $catamaran
+  font-size: 16px
+  background-color: $main
+  color: $black
+  min-width: 320px
+  font-weight: 400
+a
+  text-decoration: none
+  color: inherit
+input,
+textarea,
+button
+  font-family: inherit
+  color: inherit
+  -webkit-appearance: none
+.container
+  max-width: 1200px
+  padding-left: 24px
+  padding-right: 24px
+  margin: 0 auto
+  &.sm
+    max-width: 800px
+.row
+  margin-left: -8px
+  margin-right: -8px
+  display: flex
+  flex-wrap: wrap
+.col
+  padding-left: 8px
+  padding-right: 8px
+.bg-cover
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+.bg-contain
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+.sect
+  padding-top: 130px
+  padding-bottom: 130px
+  &.top
+    padding-bottom: 0
+.section-title
+  text-align: center
+  margin-bottom: 80px
+  &__main
+    font-size: 46px
+    line-height: 50px
+    font-family: $lato
+    font-weight: 700
+    margin: 0
+  &__subtitle
+    margin: 20px auto 0
+    max-width: 750px
+    font-size: 20px
+    line-height: 30px
+.main-btn
+  display: inline-block
+  font-size: 18px
+  line-height: 24px
+  text-align: center
+  padding: 15px 25px
+  transition: background-color 300ms, opacity 100ms
+  border-radius: 0
+  border: none
+  background-color: $aqua
+  color: #fff
+  cursor: pointer
+  font-family: $lato
+  font-weight: 500
+  text-transform: uppercase
+  -webkit-appearance: none
+  &:disabled
+    opacity: 0.5
+    cursor: not-allowed
+  &:hover
+    background-color: $gray
+  &:active
+    opacity: 0.8
+.input-wrapper
+  margin-bottom: 25px
+.input-title
+  margin: 0 0 10px
+  font-size: 18px
+.styled-inp
+  flex-grow: 1
+  background-color: transparent
+  font-size: 18px
+  line-height: 20px
+  padding: 9px 15px
+  display: block
+  width: 100%
+  transition: border-color 300ms, opacity 50ms
+  resize: none
+  border-radius: 5px
+  &:focus
+    &::-webkit-input-placeholder
+      color: transparent
+svg
+  path,
+  circle,
+  g
+    fill: inherit
+    transition: inherit
+  .passport
+    stroke: inherit
+
+//slick dots
+.slick-dots
+  width: 100%
+  list-style: none
+  margin: 0
+  padding: 30px 0 0
+  text-align: center
+  li
+    display: inline-block
+    width: 11px
+    height: 11px
+    margin: 0 5px
+    transition: 500ms
+    border: 1px solid #fff
+    &.slick-active
+      background-color: #fff
+      box-shadow: 0 0 0 1px #fff
+    button
+      display: none
+//slick arrow
+.slick-arrow
+  display: block
+  background-color: transparent
+  color: transparent
+  overflow: hidden
+  border: none
+  cursor: pointer
+  width: 27px
+  height: 45px
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center
+  padding: 0
+  z-index: 2
+  &.slick-prev
+    transform: rotate(180deg)
+  &:hover
+    opacity: 0.8
+//keyframes
+@keyframes menuFixed
+  0%
+    transform: translate3d(0,-100%,0)
+  100%
+    transform: translate3d(0,0,0)
+@keyframes dropDown
+  0%
+    transform: translateY(-10px)
+    opacity: 0
+  100%
+    transform: translateY(0px)
+    opacity: 1
+@keyframes videoOut
+  0%
+    opacity: 1
+  60%
+    opacity: 1
+  100%
+    opacity: 0
+@keyframes headColor
+  0%
+    color: #fff
+  60%
+    color: #fff
+  100%
+    color: $black
+@keyframes dropUp
+  0%
+    transform: translateY(10px)
+    opacity: 0
+  100%
+    transform: translateY(0px)
+    opacity: 1
+

@@ -1,0 +1,24 @@
+{
+  "name": "gulp-browsersync-jade-sass-starter",
+  "version": "1.0.4",
+  "description": "Gulp sass jade starter",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-pug": "latest",
+    "gulp-sass": "latest",
+    "run-sequence": "latest",
+    "gulp-cache": "latest",
+    "gulp-imagemin": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

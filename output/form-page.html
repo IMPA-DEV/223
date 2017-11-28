@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>CLN</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500|Lato:400,700" rel="stylesheet"/>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!--favicon end-->
+    <link href="dist/slick/slick.css" rel="stylesheet"/>
+    <link href="dist/lity/lity.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!--svg sprite--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+    <defs>
+        <g id="extra1" fill="#1CCAD8" fill-rule="nonzero">
+            <path d="M73.738 14H3.268C1.463 14 0 15.438 0 17.209v48.58C0 67.56 1.463 69 3.268 69h70.47C75.54 69 77 67.558 77 65.79V17.209C77 15.436 75.545 14 73.738 14zm-.551 35.866c0 1.594-1.315 2.886-2.934 2.886H6.92c-1.622 0-2.934-1.292-2.934-2.886V21.45c0-1.593 1.313-2.885 2.934-2.885h63.333c1.619 0 2.934 1.292 2.934 2.885v28.416zM74.782 0H3.222A3.229 3.229 0 0 0 0 3.233v5.534A3.23 3.23 0 0 0 3.222 12h71.555A3.23 3.23 0 0 0 78 8.767V3.233A3.226 3.226 0 0 0 74.782 0zM12.927 9.425c-1.724 0-3.121-1.4-3.121-3.129a3.126 3.126 0 0 1 3.12-3.13 3.123 3.123 0 0 1 3.118 3.13 3.122 3.122 0 0 1-3.117 3.13zm10.632 0c-1.724 0-3.12-1.4-3.12-3.129a3.125 3.125 0 0 1 3.12-3.13 3.125 3.125 0 0 1 3.12 3.13 3.124 3.124 0 0 1-3.12 3.13zm16.56 0c-1.724 0-3.12-1.4-3.12-3.129a3.124 3.124 0 0 1 3.12-3.13 3.123 3.123 0 0 1 3.118 3.13 3.123 3.123 0 0 1-3.118 3.13zm17.11 0a3.123 3.123 0 0 1-3.119-3.129 3.124 3.124 0 0 1 3.119-3.13 3.126 3.126 0 0 1 3.12 3.13 3.121 3.121 0 0 1-3.12 3.13zm10.635 0a3.123 3.123 0 0 1-3.118-3.129 3.124 3.124 0 0 1 3.118-3.13 3.126 3.126 0 0 1 3.121 3.13 3.124 3.124 0 0 1-3.12 3.13z"/>
+            <path d="M68.904 22H11.097C9.939 22 9 22.894 9 24c0 1.104.939 2 2.097 2h57.807c1.16 0 2.096-.896 2.096-2 0-1.106-.939-2-2.096-2z"/>
+        </g>
+        <g id="extra2" fill="none" fill-rule="evenodd">
+            <path fill="#1CCAD8" d="M5 2h52.238L58 31H5z"/>
+            <path fill="#fff" fill-rule="nonzero" d="M11 13h5v11h-5z"/>
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M11 42h5v14h-5z"/>
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M54 0H6C2.692 0 0 2.717 0 6.056v60.562c0 3.34 2.692 6.056 6 6.056h.857V77H12v-4.326h36V77h5.143v-4.326H54c3.308 0 6-2.717 6-6.056V6.056C60 2.716 57.308 0 54 0zm.857 66.618a.862.862 0 0 1-.857.865H6a.862.862 0 0 1-.857-.865V34.607h49.714v32.01zm0-37.202H5.143V6.056c0-.477.385-.865.857-.865h48c.473 0 .857.388.857.865v23.36z"/>
+        </g>
+        <path id="extra3" fill="#1CCAD8" fill-rule="nonzero" d="M52.331 22.476v43.165l34.447-6.522V38.088c0-.88.769-1.564 1.646-1.464l4.238.654a1.475 1.475 0 0 1 1.308 1.464v24.433c0 .694-.486 1.294-1.166 1.44l-37.709 8.089c-1.822.39-3.707.395-5.53.012L12.26 64.888a1.474 1.474 0 0 1-1.173-1.404l-.644-24.813a1.475 1.475 0 0 1 1.347-1.506l31.687-2.778a1.477 1.477 0 0 0 1.237-.906l4.773-11.566c.616-1.492 2.843-1.053 2.843.561zM10.085 8.343L.142 29.548c-.486 1.036.345 2.205 1.486 2.09l37.344-3.764a1.477 1.477 0 0 0 1.201-.869L52.19 0 11.156 7.519c-.47.086-.868.393-1.07.824zM52.19 0l12.714 27.85c.223.486.692.815 1.226.858l37.274 2.99c1.123.09 1.93-1.058 1.462-2.08l-9.721-21.26a1.477 1.477 0 0 0-1.082-.839L52.189 0z"/>
+        <g id="extra4" fill="none" fill-rule="evenodd">
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M41.5 0c-.592 0-1.147.29-1.482.775C39.037 2.195 16 35.715 16 52.67 16 66.637 27.44 78 41.5 78 55.561 78 67 66.637 67 52.67 67 35.716 43.963 2.194 42.983.775A1.801 1.801 0 0 0 41.5 0zm0 74.427c-12.077 0-21.902-9.76-21.902-21.757 0-13.485 16.757-39.877 21.902-47.663 5.146 7.786 21.903 34.178 21.903 47.663 0 11.997-9.826 21.757-21.903 21.757z"/>
+            <path fill="#1CCAD8" d="M50.472 18C51.131 43.624 42.64 59.886 25 66.787l3.036 4.385L37.429 76l10.125-.828 8.465-4 4.893-4.385 3.414-6.805L66 51.565l-1.674-7.374-2.348-6.362-3.064-9.6L50.472 18z"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M40 67.287c0 .946.81 1.713 1.808 1.713C51.288 69 59 61.693 59 52.713c0-.946-.81-1.713-1.808-1.713s-1.807.767-1.807 1.713c0 7.092-6.091 12.862-13.577 12.862-.999 0-1.808.766-1.808 1.712z"/>
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M77.225 7.225h-3.45v-3.45a1.775 1.775 0 1 0-3.55 0v3.45h-3.45a1.775 1.775 0 1 0 0 3.55h3.45v3.45a1.775 1.775 0 1 0 3.55 0v-3.45h3.45a1.775 1.775 0 1 0 0-3.55zM12.225 61.225h-3.45v-3.45a1.775 1.775 0 1 0-3.55 0v3.45h-3.45a1.775 1.775 0 1 0 0 3.55h3.45v3.45a1.775 1.775 0 1 0 3.55 0v-3.45h3.45a1.775 1.775 0 1 0 0-3.55z"/>
+        </g>
+        <g id="extra5" fill="#1CCAD8" fill-rule="nonzero">
+            <circle cx="41" cy="9" r="4"/>
+            <circle cx="54" cy="9" r="4"/>
+            <path d="M60.174 0H4.83C2.17 0 0 2.104 0 4.693L.28 72.78C.28 75.656 2.646 78 5.548 78h53.9c2.906 0 5.272-2.344 5.272-5.22L65 4.693C65.005 2.104 62.839 0 60.174 0zm1.035 72.785a1.75 1.75 0 0 1-1.757 1.737h-53.9a1.75 1.75 0 0 1-1.757-1.737v-53.42c0-.678.395-1.28 1.022-1.572h55.371a1.722 1.722 0 0 1 1.021 1.572v53.42zm.28-59.417c0 .541-.398 1.017-.978 1.163H4.494c-.575-.142-.979-.617-.979-1.163V4.693c0-.668.59-1.21 1.316-1.21h55.343c.722 0 1.31.542 1.31 1.21v8.675h.006z"/>
+            <path d="M31.498 23C18.522 23 8 33.523 8 46.5S18.522 70 31.498 70C44.473 70 55 59.477 55 46.5S44.478 23 31.498 23zm18.875 24.305c0 10.424-8.448 18.868-18.87 18.868-10.419 0-18.867-8.444-18.867-18.868 0-10.424 3.007-5.981 18.866 3.817 15.86 9.79 18.871-14.246 18.871-3.817z"/>
+        </g>
+        <g id="extra6" fill="#1CCAD8" fill-rule="evenodd">
+            <path fill-rule="nonzero" d="M76.446 37.446h-17.35V20.51c0-.858-.696-1.554-1.554-1.554H40.606V1.554C40.606.696 39.91 0 39.052 0H1.554C.696 0 0 .696 0 1.554v74.892C0 77.304.696 78 1.554 78h74.892c.858 0 1.554-.696 1.554-1.554V39c0-.858-.696-1.554-1.554-1.554zM55.988 22.064v15.382H22.012V22.064h33.976zM3.108 3.108h34.39v15.848H3.108V3.108zm0 18.956h15.796v15.382H3.108V22.064zm0 18.49h34.39V56.04H3.108V40.554zm15.796 34.338H3.108V59.147h15.796v15.745zm37.084 0H22.012V59.147h33.976v15.745zm18.904 0H59.096V59.147h5.075a1.554 1.554 0 0 0 0-3.107H40.606V40.554h34.286v34.338z"/>
+            <path fill-rule="nonzero" d="M70.462 56h-.924c-.85 0-1.538.672-1.538 1.5s.689 1.5 1.538 1.5h.924c.85 0 1.538-.672 1.538-1.5s-.689-1.5-1.538-1.5z"/>
+            <path d="M39 39v19H1V39zM40 1v18H2V1z"/>
+        </g>
+        <g id="extra7" fill="#1CCAD8" fill-rule="nonzero">
+            <path d="M0 35.95l25.94-.019.013.069 23.193-.01.017-.085L75 35.89V18l-23.767.017c-1.717 6.433-7.311 10.991-13.684 10.991-6.354 0-11.944-4.565-13.676-11.008L.05 18.017 0 35.949zM37.998 67c4.986 0 9.382-3.284 11.002-8l-22 .008C28.622 63.718 33.018 67 37.998 67zM0 38.028V56l75-.028V38l-23.794.009c-1.745 5.996-7.313 10.24-13.657 10.24-6.335 0-11.905-4.24-13.654-10.23L0 38.03M74 14.985L57.29 0H17.727L1 15l3.793-.002 13.938-12.5h37.555l13.926 12.49z"/>
+            <path d="M0 59v19l75-.03V59l-23.767.015c-1.717 5.922-7.311 10.118-13.684 10.118-6.358 0-11.948-4.186-13.674-10.091L0 59.056M37.998 46c4.963 0 9.344-3.278 11.002-8l-22 .008C28.66 42.724 33.042 46 37.998 46z"/>
+        </g>
+        <g id="extra8" fill="#1CCAD8" fill-rule="nonzero">
+            <path d="M75 14V2H65c.253 1.41.732 3.262 1.65 5.115C68.445 10.742 71.243 13.04 75 14z"/>
+            <path d="M75 17.739c-3.64.934-6.399 3.106-8.212 6.518-.315.595-.58 1.19-.807 1.776v11.033H50.494c-1.493 2.308-1.913 4.868-2.026 6.112h17.51v25.125H41.186V43.178h4.542c-.064-1.16-.382-3.78-1.83-6.112h-2.712v-2.809c-1.74-1.14-3.948-1.72-6.6-1.725-.293 0-.552-.115-.772-.278v4.811H9.021V11.941h24.793v18.158c.211-.156.454-.272.735-.281.253-.008 3.65-.165 6.637-2.127v-15.75h14.417c2.9-1.78 5.59-4.805 6.237-9.941H0v76h74.999V17.739H75zM33.814 68.303H9.021V43.178h24.793v25.125z"/>
+            <path d="M35 31.017c2.782.004 4.918.63 6.6 1.577 2.04 1.15 3.392 2.785 4.263 4.48 1.291 2.513 1.569 5.097 1.622 6.282.015.324.016.562.015.644.002-.082.014-.32.043-.644.102-1.185.482-3.769 1.825-6.282 1.651-3.092 4.756-6.046 10.632-6.056h-.029C47.665 31.018 47.5 18 47.5 18c0 6.093-2.895 9.32-5.901 11.045C38.36 30.904 35 31.017 35 31.017zM75.633 15.552C67.28 13.635 64.921 6.248 64.261 2.386 64.016.95 64 0 64 0c0 .841-.055 1.63-.144 2.386-.547 4.693-2.696 7.773-5.25 9.792C53.963 15.85 48 16.022 48 16.022 64.043 16.046 64.018 31.081 64.001 32c.015-.485.21-4.905 2.64-8.974 1.688-2.822 4.459-5.468 8.992-6.52A19.32 19.32 0 0 1 80 16.022h-.037c-1.6 0-3.034-.172-4.33-.47z"/>
+        </g>
+    </defs>
+</svg>
+
+    <!--svg sprite end-->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col header__logo"><a href="/"><img src="img/logo.svg" alt="CLN"/></a></div>
+        </div>
+      </div>
+    </header>
+    <div class="form-page container" id="form-home">
+      <p class="form-page__title">Choose your perfect cleaning</p>
+      <form>
+        <div class="form-page__step step1">
+          <p class="form-page__step-title">Select extras</p>
+          <div class="row form-page__extras">
+            <div class="col form-page__extras-item">
+              <input id="extras1" type="checkbox" name="extras[]" value="Inside the oven" hidden="hidden"/>
+              <label for="extras1">
+                <div class="form-page__extras-img">
+                  <svg width="78" height="69" viewBox="0 0 78 69">
+                    <use xlink:href="#extra1"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Inside the oven</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras2" type="checkbox" name="extras[]" value="Inside the Fridge" hidden="hidden"/>
+              <label for="extras2">
+                <div class="form-page__extras-img">
+                  <svg width="60" height="77" viewBox="0 0 60 77">
+                    <use xlink:href="#extra2"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Inside the Fridge</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras3" type="checkbox" name="extras[]" value="Move In / Move Out" hidden="hidden"/>
+              <label for="extras3">
+                <div class="form-page__extras-img">
+                  <svg width="105" height="73" viewBox="0 0 105 73">
+                    <use xlink:href="#extra3"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Move In / Move Out</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras4" type="checkbox" name="extras[]" value="Deep Cleaning" hidden="hidden"/>
+              <label for="extras4">
+                <div class="form-page__extras-img">
+                  <svg width="79" height="78" viewBox="0 0 79 78">
+                    <use xlink:href="#extra4"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Deep Cleaning</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras5" type="checkbox" name="extras[]" value="Load of Laundry" hidden="hidden"/>
+              <label for="extras5">
+                <div class="form-page__extras-img">
+                  <svg width="65" height="78" viewBox="0 0 65 78">
+                    <use xlink:href="#extra5"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Load of Laundry</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras6" type="checkbox" name="extras[]" value="Walls" hidden="hidden"/>
+              <label for="extras6">
+                <div class="form-page__extras-img">
+                  <svg width="78" height="78" viewBox="0 0 78 78">
+                    <use xlink:href="#extra6"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Walls</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras7" type="checkbox" name="extras[]" value="Inside Cabinets" hidden="hidden"/>
+              <label for="extras7">
+                <div class="form-page__extras-img">
+                  <svg width="75" height="78" viewBox="0 0 75 78">
+                    <use xlink:href="#extra7"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Inside Cabinets</p>
+              </label>
+            </div>
+            <div class="col form-page__extras-item">
+              <input id="extras8" type="checkbox" name="extras[]" value="Inside Windows" hidden="hidden"/>
+              <label for="extras8">
+                <div class="form-page__extras-img">
+                  <svg width="80" height="78" viewBox="0 0 80 78">
+                    <use xlink:href="#extra8"></use>
+                  </svg>
+                </div>
+                <p class="form-page__extras-title">Inside Windows</p>
+              </label>
+            </div>
+          </div>
+          <p class="form-page__step-title">When should we come?</p>
+          <div class="row form-page__when">
+            <div class="col form-page__calend" id="calendar">
+              <input type="text" name="date" hidden="hidden" id="form-date"/>
+            </div>
+            <div class="col form-page__time">
+              <input id="time1" type="radio" name="time-select" value="Flexible — Cleaner will arrive btn. 9a-4p" hidden="hidden" checked="checked"/>
+              <label for="time1">Flexible — Cleaner will arrive btn. 9a-4p</label>
+              <input id="time2" type="radio" name="time-select" value="8:00am" hidden="hidden"/>
+              <label for="time2">8:00am</label>
+              <input id="time3" type="radio" name="time-select" value="9:00am" hidden="hidden"/>
+              <label for="time3">9:00am</label>
+              <input id="time4" type="radio" name="time-select" value="10:00am" hidden="hidden"/>
+              <label for="time4">10:00am</label>
+              <input id="time5" type="radio" name="time-select" value="11:00am" hidden="hidden"/>
+              <label for="time5">11:00am</label>
+              <input id="time6" type="radio" name="time-select" value="12:00am" hidden="hidden"/>
+              <label for="time6">12:00am</label>
+              <input id="time7" type="radio" name="time-select" value="1:00pm" hidden="hidden"/>
+              <label for="time7">1:00pm</label>
+              <input id="time8" type="radio" name="time-select" value="2:00pm" hidden="hidden"/>
+              <label for="time8">2:00pm</label>
+              <input id="time9" type="radio" name="time-select" value="3:00pm" hidden="hidden"/>
+              <label for="time9">3:00pm</label>
+              <input id="time10" type="radio" name="time-select" value="4:00pm" hidden="hidden"/>
+              <label for="time10">4:00pm</label>
+              <input id="time11" type="radio" name="time-select" value="5:00pm" hidden="hidden"/>
+              <label for="time11">5:00pm</label>
+              <input id="time12" type="radio" name="time-select" value="6:00pm" hidden="hidden"/>
+              <label for="time12">6:00pm</label>
+              <input id="time13" type="radio" name="time-select" value="7:00pm" hidden="hidden"/>
+              <label for="time13">7:00pm</label>
+            </div>
+          </div>
+          <div class="form-page__next"><a class="main-btn sm-scr" href="#form-home" id="form-next">Next</a></div>
+        </div>
+        <div class="form-page__step step2">
+          <p class="form-page__step-title">How frequent?</p>
+          <div class="row form-page__freq">
+            <div class="col form-page__freq-item">
+              <input id="freq1" type="radio" name="freq" value="One-Time" hidden="hidden"/>
+              <label for="freq1">One-Time</label>
+            </div>
+            <div class="col form-page__freq-item">
+              <input id="freq2" type="radio" name="freq" value="Weekly" hidden="hidden"/>
+              <label for="freq2">Weekly</label>
+            </div>
+            <div class="col form-page__freq-item">
+              <input id="freq3" type="radio" name="freq" value="Every 2 Weeks" hidden="hidden"/>
+              <label for="freq3">Every 2 Weeks</label>
+            </div>
+            <div class="col form-page__freq-item">
+              <input id="freq4" type="radio" name="freq" value="Every 4 Weeks" hidden="hidden"/>
+              <label for="freq4">Every 4 Weeks</label>
+            </div>
+          </div>
+          <p class="form-page__step-title">Where are we coming to clean?</p>
+          <div class="row form-page__form">
+            <div class="col form-page__form-col">
+              <input type="text" name="address" placeholder="Your Address*" required="required"/>
+              <input type="email" name="email" placeholder="Your Email"/>
+            </div>
+            <div class="col form-page__form-col">
+              <input type="tel" name="phone" placeholder="Your Phone*" pattern="(\+?\d[- .]*){7,13}" required="required"/>
+              <input type="text" name="name" placeholder="Your Name"/>
+            </div>
+            <div class="col form-page__form-col wide">
+              <textarea placeholder="Special Notes" name="message"></textarea>
+            </div>
+          </div>
+          <div class="form-page__next">
+            <input type="text" name="formid" hidden="hidden" id="form-id"/>
+            <input type="text" name="country" hidden="hidden" id="form-country"/>
+            <input type="text" name="size" hidden="hidden" id="form-size"/>
+            <input type="text" name="type" hidden="hidden" id="form-type"/>
+            <input class="main-btn" type="submit" value="book cleaning"/>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--success--><a href="#popup-success" data-lity="data-lity" hidden="hidden" id="open-success-popup"></a>
+    <div class="lity-hide popup-container" id="popup-success">
+      <div class="success__container">
+        <div class="close-popup bg-contain"></div>
+        <div class="success__text"><img class="success__img" src="img/success.svg" alt="CLN"/>
+          <p class="success__title">Thank you!</p>
+          <p class="success__subtitle">Our manager will contact you soon.</p>
+        </div>
+      </div>
+    </div>
+    <!--success end-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="dist/jquery-ui.min.js"></script>
+    <script src="dist/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="dist/jquery.formstyler.min.js"></script>
+    <script src="dist/lity/lity.min.js"></script>
+  </body>
+</html>

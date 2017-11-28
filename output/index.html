@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>CLN</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,500|Lato:400,700" rel="stylesheet"/>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <!--favicon end-->
+    <link href="dist/slick/slick.css" rel="stylesheet"/>
+    <link href="dist/lity/lity.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!--svg sprite--><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+    <defs>
+        <g id="how-works1" fill="#1CCAD8" fill-rule="evenodd">
+            <path fill-rule="nonzero" d="M54.646 17.344h-20.71V3.918C33.936 1.76 32.162 0 29.991 0H3.945C1.774 0 0 1.762 0 3.918v50.164C0 56.238 1.774 58 3.945 58h26.046c2.17 0 3.945-1.762 3.945-3.918V42.508h11.57l.115-.312 8.613-22.82.766-2.034-.354.002zM20.538 20.79l6.898 7.525-14.146 11.68 7.248-19.205zm1.485-1.627h29.585L32.503 30.59l-10.48-11.426zM12.8 2.825h8.333c.263 0 .479.212.479.474 0 .26-.216.473-.48.473h-8.332a.476.476 0 0 1-.476-.473c0-.262.213-.474.476-.474zm4.166 53.219a1.967 1.967 0 0 1-1.973-1.96c0-1.08.883-1.958 1.973-1.958s1.975.874 1.975 1.958-.885 1.96-1.975 1.96zm14.222-5.29H2.744V6.213H31.19v11.131H20.005l-.498 1.316H5.76v3.005h12.614l-1.01 2.676H9.897v2.253h6.616l-.854 2.264h-4.35v1.83h3.659l-4.342 11.5-.12.318h20.686l-.003 8.246zM14.825 40.691l13.636-11.259 3.173 3.462 5.784-3.462 5.14 11.259H14.824zm29.793-.695l-5.332-11.681 12.58-7.526-7.248 19.207z"/>
+            <path d="M21.166 18.549h31.936L31.987 31.822z"/>
+        </g>
+        <path id="how-works2" fill="#1CCAD8" fill-rule="nonzero" d="M40.953 25.867c.398 0 .774-.076 1.135-.186l-2.72 17.4c-.1-.003-.201 0-.307.018-6.805 1.068-12.174-2.456-15.4-8.041.976-1.79.139-4.616-2.517-4.616-3.828 0-3.874 5.87-.152 6.033 3.734 6.647 10.169 10.489 17.9 9.654L37.035 58H5.981L1.3 25.711c.333.092.676.155 1.037.155v.001h38.616zm.001-6.05H2.337A2.053 2.053 0 0 0 .29 21.873c0 .6.262 1.137.673 1.513.364.333.843.543 1.374.543h38.617c.53 0 1.011-.21 1.375-.544a2.052 2.052 0 0 0-1.375-3.568zm-36.952-4.63c-3.58-5.36 4.75-7.458 6.657-1.86.459 1.346 2.534 1.537 2.904 0C16.22 2.257 30.96 4.58 30.678 15.825c-.03 1.243 1.28 1.753 2.265 1.306 2.764-2.827 5.413-1.312 6.17.75.032.086.065.17.09.258.6.44 1.06.24 1.36-.258.488-.807.564-2.398.159-3.362-1.209-2.875-4.613-2.396-7.134-1.768C32.242.993 16.86-.713 11.778 9.45c-5.017-5.43-15.571-.515-10.377 7.264 1.077 1.61 3.686.098 2.6-1.526zM31.98 5.644c0-2.652 2.149-4.809 4.788-4.809 2.639 0 4.787 2.157 4.787 4.809s-2.148 4.809-4.787 4.809c-2.64 0-4.788-2.157-4.788-4.809zm1.929 0c0 1.585 1.28 2.87 2.859 2.87a2.865 2.865 0 0 0 2.858-2.87 2.864 2.864 0 0 0-2.858-2.87 2.865 2.865 0 0 0-2.86 2.87zM7.06 3.459C7.061 1.552 8.607 0 10.505 0s3.444 1.552 3.444 3.46c0 1.906-1.545 3.458-3.444 3.458-1.898 0-3.444-1.552-3.444-3.459zm1.93 0c0 .84.678 1.521 1.514 1.521s1.514-.68 1.514-1.52c0-.841-.678-1.522-1.514-1.522s-1.514.681-1.514 1.521z"/>
+        <path id="how-works3" fill="#1CCAD8" fill-rule="nonzero" d="M57.875 34.303c3.323 0 6.017 2.706 6.017 6.041 0 3.336-2.695 6.042-6.017 6.042-3.322 0-6.017-2.706-6.017-6.042 0-3.335 2.695-6.04 6.017-6.04zm-24.515-.659l-5.465-5.484 1.856-1.865 5.465 5.485-1.856 1.864zm36.3 17.037c-1.563-3.07-3.132-6.14-4.697-9.211a7.1 7.1 0 0 1-3.389 5.81l1.028 2.016h-9.046c.023-.38.005-.759-.032-1.136a2.998 2.998 0 0 0-.602-2.366c-.224-.295-.465-.573-.696-.86-.04-.048-.077-.096-.12-.143-3.779-4.61-8.335-8.437-13.437-11.524-3.137-1.9-5.98 3.02-2.855 4.91a49.632 49.632 0 0 1 6.541 4.743l-17.163.017c-1.757-1.594-3.514-3.186-5.27-4.782-1.085-.986-2.95-1.21-4.004 0-2.754 3.157-5.506 6.322-8.258 9.475-.453.52-.675 1.083-.726 1.641H2.739c-3.652 0-3.652 5.689 0 5.689h21.528v.025L47.71 55c.139 0 .27-.015.407-.02h19.082c1.434 0 2.297-.88 2.607-1.95.272-.685.287-1.502-.146-2.35zm-55.925-1.408c1.472-1.69 2.943-3.378 4.416-5.066l5.077 4.604c.222.2.453.344.687.46-3.394.002-6.786.002-10.18.002zm-.338-28.368h-3.186v1.777h15.573v-1.777h-3.186v-2H33.57V0H3.487v18.903h9.91v2.002zm7.077-1.067h-4.956v-.935h4.956v.935zm-7.078-3.067H5.61V2.131h25.837v14.64h-8.848-9.202z"/>
+        <g id="clean1" fill="#1CCAD8" fill-rule="evenodd">
+            <path fill-rule="nonzero" d="M26.344 8.657c-4.875-4.876-12.807-4.876-17.682 0A12.425 12.425 0 0 0 5 17.5c0 3.34 1.3 6.481 3.662 8.843A12.463 12.463 0 0 0 17.502 30c3.203 0 6.404-1.219 8.842-3.657 4.875-4.876 4.875-12.81 0-17.686zm-.909 16.777c-4.374 4.375-11.49 4.375-15.864 0A11.148 11.148 0 0 1 6.285 17.5c0-2.997 1.167-5.815 3.286-7.934a11.182 11.182 0 0 1 7.932-3.281c2.873 0 5.745 1.093 7.932 3.28 4.374 4.376 4.374 11.494 0 15.87z"/>
+            <path fill-rule="nonzero" d="M31.04 11.409c-.115-.339-.432-.499-.708-.357-.275.141-.405.53-.29.869.582 1.711.876 3.533.876 5.414 0 .368.242.665.541.665.299 0 .541-.297.541-.665 0-2.058-.323-4.052-.96-5.926zM28.89 8.024a14.4 14.4 0 0 0-1.508-1.84C24.768 3.487 21.294 2 17.598 2a.608.608 0 0 0-.598.618c0 .34.268.617.598.617 3.376 0 6.55 1.358 8.938 3.823.505.521.968 1.087 1.379 1.683a.583.583 0 0 0 .834.145.63.63 0 0 0 .14-.862z"/>
+            <path fill-rule="nonzero" d="M40.81 36.957l-4.893-4.892a.65.65 0 0 0-.918 0l-1.01 1.009-3.495-3.496A17.474 17.474 0 0 0 35.2 17.601c0-4.701-1.83-9.121-5.156-12.446A17.491 17.491 0 0 0 17.596 0 17.49 17.49 0 0 0 5.148 5.155c-6.864 6.863-6.864 18.029 0 24.891a17.491 17.491 0 0 0 12.448 5.155 17.48 17.48 0 0 0 11.98-4.705l3.496 3.495-1.01 1.01a.649.649 0 0 0 0 .917l4.894 4.892a.647.647 0 0 0 .918 0l2.936-2.936a.649.649 0 0 0 0-.917zM29.126 29.13a16.201 16.201 0 0 1-11.53 4.775c-4.356 0-8.45-1.696-11.53-4.775-6.359-6.357-6.359-16.7 0-23.056a16.201 16.201 0 0 1 11.53-4.776c4.356 0 8.45 1.696 11.53 4.776A16.195 16.195 0 0 1 33.903 17.6c0 4.354-1.697 8.449-4.777 11.528zm8.29 10.305l-3.977-3.975 1.009-1.008v-.001l.001-.001 1.009-1.008 3.976 3.975-2.019 2.018z"/>
+            <path d="M9.455 12.908h2.701v7.81h3.292v-7.01h3.228v7.01H21.8v-10.01h3.365v10.01H9.455z"/>
+            <path fill-rule="nonzero" d="M26.34 20.705h-.75V10.648a.654.654 0 0 0-.66-.648h-3.172c-.365 0-.661.29-.661.648v10.057h-1.85v-6.95a.654.654 0 0 0-.661-.647h-3.172c-.365 0-.66.29-.66.647v6.95h-1.85V12.72a.654.654 0 0 0-.662-.647H9.071c-.365 0-.661.29-.661.647v7.986h-.75c-.364 0-.66.29-.66.647 0 .358.296.648.66.648H26.34c.365 0 .661-.29.661-.648a.654.654 0 0 0-.66-.647zm-14.758 0h-1.85v-7.338h1.85v7.338zm6.343 0h-1.85v-6.302h1.85v6.302zm6.344 0h-1.85v-9.41h1.85v9.41z"/>
+            <path d="M34.773 34.035l-1.632 1.156 4.147 4.68 2.822-2.918-4.361-4.446z"/>
+        </g>
+        <path id="clean2" fill="#1CCAD8" fill-rule="nonzero" d="M22.13 27.023c.901.435 1.523 1.118 1.864 2.05.373.932.334 1.887-.116 2.865-.45.979-1.142 1.623-2.073 1.934-.901.342-1.825.31-2.773-.093-.947-.404-1.607-1.056-1.98-1.957-.373-.87-.38-1.786-.023-2.75.357-.962.97-1.645 1.84-2.05l1.165-13.744c0-.434.078-.745.233-.931.155-.187.31-.187.466 0 .155.186.233.497.233.931l1.165 13.745zM41 20.5c0 5.653-2.003 10.483-6.01 14.49S26.153 41 20.5 41c-5.653 0-10.483-2.003-14.49-6.01S0 26.153 0 20.5c0-5.653 2.003-10.483 6.01-14.49S14.847 0 20.5 0c5.653 0 10.483 2.003 14.49 6.01S41 14.847 41 20.5zm-5.358 6.057a16.28 16.28 0 0 0 1.165-6.057c0-4.504-1.592-8.348-4.776-11.531-3.184-3.184-7.027-4.776-11.53-4.776-4.505 0-8.348 1.592-11.532 4.776-3.184 3.183-4.776 7.027-4.776 11.531 0 2.112.389 4.131 1.165 6.057 4.442-3.044 8.713-4.752 12.813-5.125l-.466 3.727c-1.864.901-2.796 2.61-2.796 5.125 0 1.553.544 2.873 1.63 3.96 1.088 1.087 2.408 1.631 3.961 1.631s2.873-.544 3.96-1.63c1.087-1.088 1.631-2.408 1.631-3.961 0-2.516-.932-4.224-2.795-5.125l-.466-3.727c4.162.341 8.432 2.05 12.812 5.125z"/>
+        <g id="clean3" fill="none" fill-rule="evenodd">
+            <path fill="#1CCAD8" d="M25.846 8.063l6.915-2.717 7.51-.553-.882 8.817-2.814 6.557-5.506 1.868-6.065-1.868-.863-2.927-.912-2.93V10.75z"/>
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M16.773 4.066C13.128.422 5.996 0 .947 0A.948.948 0 0 0 0 .947C0 5.996.42 13.13 4.065 16.774 5.604 18.312 7.962 19 10.3 19c2.54 0 5.058-.813 6.473-2.228 2.715-2.715 3.213-9.495 0-12.706zm-1.34 11.368c-2.026 2.026-7.654 2.372-10.026 0C2.465 12.492 1.955 6.515 1.9 1.9c4.615.055 10.592.565 13.534 3.507 2.372 2.372 2.025 8.002 0 10.027zM40.053 4c-5.049 0-12.181.42-15.826 4.066-3.213 3.211-2.715 9.993 0 12.708C25.642 22.187 28.157 23 30.698 23c2.338 0 4.695-.686 6.237-2.224C40.578 17.13 41 9.996 41 4.947A.948.948 0 0 0 40.053 4zM35.59 19.434c-2.371 2.372-8.002 2.026-10.027 0-2.025-2.025-2.371-7.656 0-10.028 2.942-2.943 8.92-3.453 13.534-3.508-.055 4.618-.564 10.596-3.507 13.536z"/>
+            <path fill="#15C1CE" fill-rule="nonzero" d="M33.895 12.178c-.22-.455-.849-.61-1.312-.4-7.138 3.268-10.645 8.967-12.238 14.825-1.972-12.456-7.673-16.253-10.09-17.865-.302-.201-.537-.348-.667-.473a.95.95 0 0 0-1.316 0 .89.89 0 0 0 0 1.282c.184.177.503.4.933.687 2.725 1.814 9.963 6.637 9.963 25.86 0 .5.417.906.93.906.515 0 .932-.406.932-.904 0-7.767 2.142-18.007 12.345-22.676 0-.002.151-.07.151-.07.464-.214.588-.718.369-1.172z"/>
+        </g>
+        <g id="serv1" fill="#1ccad8" fill-rule="evenodd">
+            <path fill-rule="nonzero" stroke="#1ccad8" stroke-width=".2" d="M49.126 59H9.874A.877.877 0 0 1 9 58.122V27.878c0-.485.392-.878.874-.878h39.252c.482 0 .874.393.874.878v30.244c0 .486-.39.878-.874.878zm-38.377-1.757H48.25V28.757H10.75v28.486z"/>
+            <path fill-rule="nonzero" stroke="#1ccad8" stroke-width=".2" d="M56.145 29H1.855a.857.857 0 0 1-.795-.552.895.895 0 0 1 .207-.96L28.408 1.24a.842.842 0 0 1 1.177 0l27.148 26.249a.895.895 0 0 1 .207.96.859.859 0 0 1-.795.551zm-52.14-1.751h49.988L28.997 3.08 4.005 27.25zM35.159 58H21.841a.846.846 0 0 1-.841-.851V38.85c0-.47.377-.851.841-.851h13.318c.464 0 .841.381.841.851V57.15a.845.845 0 0 1-.841.851zm-12.477-1.702h11.636V39.702H22.682v16.596z"/>
+            <path fill-rule="nonzero" stroke="#1ccad8" stroke-width=".2" d="M48 21c-.552 0-1-.378-1-.843V9.843c0-.465.448-.843 1-.843s1 .378 1 .843v10.314c0 .465-.446.843-1 .843z"/>
+            <path d="M29.106 1.929l26.746 25.734H2.462z"/>
+        </g>
+        <g id="serv2" fill="none" fill-rule="evenodd">
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M48.462 5.414H35.354l-3.392-3.69A5.34 5.34 0 0 0 28.042 0H3.538A3.55 3.55 0 0 0 0 3.553V41.447A3.55 3.55 0 0 0 3.538 45h44.924A3.55 3.55 0 0 0 52 41.447V8.967a3.55 3.55 0 0 0-3.538-3.553zM30.724 2.87l2.337 2.543h-3.098l-3.392-3.69-.031-.032h1.502c1.015 0 1.993.43 2.682 1.179zm-8.073-1.18c1.015 0 1.993.43 2.682 1.18l2.337 2.543h-3.513l-3.392-3.69-.03-.032h1.916zm-19.113 0h13.307c1.016 0 1.993.43 2.682 1.18l2.337 2.543H3.538c-.68 0-1.314.193-1.853.527V3.553a1.86 1.86 0 0 1 1.853-1.861zm46.777 39.756a1.86 1.86 0 0 1-1.853 1.861H3.538a1.86 1.86 0 0 1-1.853-1.86V8.965a1.86 1.86 0 0 1 1.853-1.86h44.924a1.86 1.86 0 0 1 1.853 1.86v32.481z"/>
+            <path fill="#1CCAD8" fill-rule="nonzero" d="M45.266 10H32.734c-.956 0-1.734.752-1.734 1.676v8.648c0 .924.778 1.676 1.734 1.676h12.532c.956 0 1.734-.752 1.734-1.676v-8.648c0-.924-.778-1.676-1.734-1.676zm.056 10.324c0 .03-.025.054-.056.054H32.734a.055.055 0 0 1-.056-.054v-8.648c0-.03.025-.054.056-.054h12.532c.03 0 .056.024.056.054v8.648z"/>
+            <path fill="#1CCAD8" d="M3 .902h16.204l3.859 5.029-22.087.513c-.222-1.97-.222-3.26 0-3.87C1.2 1.966 1.873 1.409 3 .903zM32.684 10.763H45.83V20.95H32.684z"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M42.146 14h-7.292c-.471 0-.854.448-.854 1s.383 1 .854 1h7.292c.471 0 .854-.448.854-1s-.383-1-.854-1zM42.146 18h-7.292c-.471 0-.854.448-.854 1s.383 1 .854 1h7.292c.471 0 .854-.448.854-1s-.383-1-.854-1z"/>
+        </g>
+        <g id="serv3" fill="#1CCAD8" fill-rule="evenodd">
+            <path d="M18.213 9.347h23.646v40.316H18.213z"/>
+            <path fill-rule="nonzero" d="M52.222 51H6.778C3.04 51 0 47.962 0 44.227V14.891c0-3.735 3.04-6.773 6.778-6.773h13.437V4.933A4.94 4.94 0 0 1 25.152 0h8.696a4.94 4.94 0 0 1 4.937 4.933v3.185h13.437c3.737 0 6.778 3.039 6.778 6.773v29.337C59 47.962 55.96 51 52.222 51zm-3.06-1.617h3.06a5.163 5.163 0 0 0 5.16-5.156V14.891a5.163 5.163 0 0 0-5.16-5.156h-3.06v39.648zm-6.791 0h5.173V9.736h-5.173v39.647zm-24.123 0h22.504V9.736H18.248v39.647zm-6.793 0h5.174V9.736h-5.174v39.647zM6.778 9.736a5.163 5.163 0 0 0-5.16 5.155v29.336a5.163 5.163 0 0 0 5.16 5.156h3.059V9.736h-3.06zm15.056-1.618h15.332V4.933a3.32 3.32 0 0 0-3.318-3.316h-8.696a3.32 3.32 0 0 0-3.318 3.316v3.185z"/>
+        </g>
+        <g id="serv4" fill="#1CCAD8" fill-rule="evenodd">
+            <path d="M9.909 21.219l19.97 11.561-6.685 9.249L2.257 30.038z"/>
+            <path fill-rule="nonzero" d="M58.778 28.669l-6.485-7.66 6.485-7.66a.94.94 0 0 0-.252-1.423L37.53.118a.914.914 0 0 0-1.097.153l-6.377 6.4-6.32-6.397a.913.913 0 0 0-1.113-.148L.46 13.116a.94.94 0 0 0-.138 1.516l7.51 6.516-6.48 8.748a.938.938 0 0 0 .29 1.376l6.456 3.632a.922.922 0 0 0-.055.276v8.634c0 1.14.606 2.204 1.583 2.777l18.76 10.965c.505.294 1.07.442 1.636.442h.017l.014.002c.01 0 .018-.005.027-.006a3.248 3.248 0 0 0 1.58-.438l18.702-10.932a3.343 3.343 0 0 0 1.64-2.876v-9.619l6.557-4.057a.938.938 0 0 0 .219-1.404zM29.13 31.215L10.917 20.971 29.131 9.702v21.513zm1.844-21.55L49.25 20.97 30.975 31.25V9.664zM37.24 2.09l19.403 10.913-5.752 6.795L31.53 7.82l5.71-5.73zm-14.306.01l5.67 5.74L9.178 19.86l-6.669-5.787L22.934 2.1zM9.342 22.22l19.33 10.872-5.846 7.96L3.461 30.16l5.881-7.94zm1.207 22.755a1.35 1.35 0 0 1-.662-1.16V35.91l12.75 7.171a.918.918 0 0 0 1.187-.259l5.307-7.225v20.24L10.549 44.975zm39.609-1.227c0 .517-.276 1-.719 1.26L30.975 55.801V35.576l5.37 7.25a.917.917 0 0 0 1.218.236l12.595-7.792v8.478zm-12.84-2.721l-5.863-7.912 19.415-10.92 5.804 6.856-19.357 11.976z"/>
+            <path d="M9.39 20.64L29.663 7.57 23.336.997 1.84 13.875zM30.768 8.205l6.35-7.21 20.611 11.52-6.388 8.26zM30.42 32.398L50.775 21.31l7.232 7.643-20.8 12.953z"/>
+        </g>
+    </defs>
+</svg>
+
+    <!--svg sprite end-->
+    <!--header-->
+    <div id="menu-btn">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col header__logo"><a class="sm-scr" href="#home"><img src="img/logo.svg" alt="CLN"/></a></div>
+          <div class="col header__nav" id="menu-el">
+            <div class="bg-contain" id="close-menu"></div><a class="header__nav-phone" href="tel:+1(111)1111111">(111) 111-11-11</a>
+            <ul>
+              <li><a href="#howworks">how it works</a></li>
+              <li><a href="#howclean">how we clean</a></li>
+              <li><a href="#serv">our services</a></li>
+              <li><a href="#testim">testimonials</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#contacts">contacts</a></li>
+            </ul>
+          </div>
+          <div class="col header__phone"><a class="header__phone-link" href="tel:+1(111)1111111">(111) 111-11-11</a></div>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+    <!--main slider-->
+    <section class="main-slider bg-cover" id="home">
+      <div class="main-slider__video bg-cover">
+        <video class="main-slider__video-el" autoplay="autoplay">
+          <source src="img/video.mp4" type="video/mp4"/>
+        </video>
+      </div>
+      <div class="container">
+        <h1 class="main-slider__title">Spend your time usefuly When we clean</h1>
+        <p class="main-slider__subtitle">We are devoted to spotlessness, obsessively attentive to detail</p>
+        <div class="main-slider__form">
+          <select class="main-slider__select location">
+            <option selected="selected">Los Angeles</option>
+            <option>San Diego</option>
+            <option>San Francisco</option>
+            <option>Orange County</option>
+          </select>
+          <select class="main-slider__select size">
+            <option selected="selected">Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedroom</option>
+            <option>3 Bedroom</option>
+            <option>4 Bedroom</option>
+            <option>5 Bedroom</option>
+          </select>
+          <select class="main-slider__select type">
+            <option selected="selected">Standard (2 hours)</option>
+            <option>Standard Plus (2,5-3 hours)</option>
+            <option>Deep Clean (4,5-5 hours)</option>
+            <option>Moving In/Out (4,5-5 hours)</option>
+          </select><a class="main-btn main-form__next" href="form-page.html" data-id="head form">NEXT</a>
+        </div>
+      </div>
+    </section>
+    <!--main slider end-->
+    <!--how works-->
+    <section class="how-works sect top menu-spy" id="howworks">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">How it works</h3>
+        </div>
+        <div class="row">
+          <div class="col how-works__item">
+            <svg class="how-works__item-img" width="55" height="58" viewBox="0 0 55 58">
+              <use xlink:href="#how-works1"></use>
+            </svg>
+            <p class="how-works__item-title">Book</p>
+            <p class="how-works__item-descr">Select the date and time you’d like your professional to show up.</p>
+          </div>
+          <div class="col how-works__item">
+            <svg class="how-works__item-img" width="43" height="58" viewBox="0 0 43 58">
+              <use xlink:href="#how-works2"></use>
+            </svg>
+            <p class="how-works__item-title">Clean</p>
+            <p class="how-works__item-descr">A certified cleaner comes over and cleans your place.</p>
+          </div>
+          <div class="col how-works__item">
+            <svg class="how-works__item-img" width="70" height="55" viewBox="0 0 70 55">
+              <use xlink:href="#how-works3"></use>
+            </svg>
+            <p class="how-works__item-title">Relax</p>
+            <p class="how-works__item-descr">Sit back and relax. Enjoy your sparkling home!</p>
+          </div>
+        </div>
+        <div class="row how-works__info">
+          <div class="col how-works__text">
+            <p>We are devoted to spotlessness, obsessively attentive to detail, and believers in good old fashioned elbow grease. We use non-toxic, naturally derived products that are tough on dirt, but easy on you and the environment. We're on a mission to spread healthiness and happiness wherever we go, because we believe that well-being starts with a clean home.</p><a class="main-btn sm-scr" href="#bottom-form" id="book-btn">book now</a>
+          </div>
+          <div class="col how-works__image"><img src="img/book.jpg" alt="CLN"/></div>
+        </div>
+      </div>
+    </section>
+    <!--how works end-->
+    <!--how clean-->
+    <section class="how-clean sect top menu-spy" id="howclean">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">How we clean your house</h3>
+        </div>
+        <div class="how-clean__tab-slider">
+          <div class="how-clean__tab-item">Living room</div>
+          <div class="how-clean__tab-item">Bedroom</div>
+          <div class="how-clean__tab-item">Kitchen</div>
+          <div class="how-clean__tab-item">Bathroom</div>
+        </div>
+        <div class="how-clean__info-slider">
+          <div class="how-clean__info-item item1"><img class="how-clean__info-img" src="img/howclean/1.jpg" alt="CLN"/>
+            <ul class="how-clean__info-images">
+              <li><img src="img/howclean/1/surf.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/1/shelf.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/1/furn.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/1/floor.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/1/board.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/1/furninsh.jpg" alt="CLN"/></li>
+            </ul>
+            <ul class="how-clean__info-list">
+              <li>Wipe glass and other surfaces</li>
+              <li>Wipe the shelves</li>
+              <li>Clean soft furniture</li>
+              <li>Clean floor and  carpets</li>
+              <li>Wipe the sideboard</li>
+              <li>Clean the furnishings</li>
+            </ul>
+          </div>
+          <div class="how-clean__info-item item2"><img class="how-clean__info-img" src="img/howclean/2.jpg" alt="CLN"/>
+            <ul class="how-clean__info-images">
+              <li><img src="img/howclean/2/furnithings.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/2/surf.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/2/bed.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/2/board.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/2/things.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/2/floor.jpg" alt="CLN"/></li>
+            </ul>
+            <ul class="how-clean__info-list">
+              <li>Clean the furnishings</li>
+              <li>Wipe glass and other surfaces</li>
+              <li>Make your bed</li>
+              <li>Wipe the nightstands</li>
+              <li>Fold clothes and stuff</li>
+              <li>Clean floor and  carpets</li>
+            </ul>
+          </div>
+          <div class="how-clean__info-item item3"><img class="how-clean__info-img" src="img/howclean/3.jpg" alt="CLN"/>
+            <ul class="how-clean__info-images">
+              <li><img src="img/howclean/3/sink.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/3/shelf.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/3/garbage.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/3/surf.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/3/floor.jpg" alt="CLN"/></li>
+            </ul>
+            <ul class="how-clean__info-list">
+              <li>Wash the dishes and clean the sink</li>
+              <li>Clean outside the work-surfaces, stove and fridge</li>
+              <li>Take out the garbage.</li>
+              <li>Wipe glass and other surfaces</li>
+              <li>Clean floor</li>
+            </ul>
+          </div>
+          <div class="how-clean__info-item item4"><img class="how-clean__info-img" src="img/howclean/4.jpg" alt="CLN"/>
+            <ul class="how-clean__info-images">
+              <li><img src="img/howclean/4/mirror.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/4/shower.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/4/toilet.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/4/board.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/4/sink.jpg" alt="CLN"/></li>
+              <li><img src="img/howclean/4/floor.jpg" alt="CLN"/></li>
+            </ul>
+            <ul class="how-clean__info-list">
+              <li>Wipe glass and other surfaces</li>
+              <li>Clean shower cabin and bathroom</li>
+              <li>Clean and disinfect the toilet</li>
+              <li>Wipe the  cabinets</li>
+              <li>Clean a sink</li>
+              <li>Clean floor and rugs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row how-clean__bottom">
+          <div class="col how-clean__bottom-item">
+            <svg class="how-clean__bottom-img" width="41" height="41" viewBox="0 0 41 41">
+              <use xlink:href="#clean1"></use>
+            </svg>
+            <p class="how-clean__bottom-title">Conduct initial estimate</p>
+          </div>
+          <div class="col how-clean__bottom-item">
+            <svg class="how-clean__bottom-img" width="41" height="41" viewBox="0 0 41 41">
+              <use xlink:href="#clean2"></use>
+            </svg>
+            <p class="how-clean__bottom-title">Clean quickly and efficiently</p>
+          </div>
+          <div class="col how-clean__bottom-item">
+            <svg class="how-clean__bottom-img" width="41" height="37" viewBox="0 0 41 37">
+              <use xlink:href="#clean3"></use>
+            </svg>
+            <p class="how-clean__bottom-title">Use eco-friendly products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--how clean end-->
+    <!--our services-->
+    <section class="services sect menu-spy" id="serv">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">Our services</h3>
+          <p class="section-title__subtitle">CLN - Professional Home Cleaning offers household cleaning services for customers who don’t have enough time to get everything done. If you are feeling stressed and overwhelmed or simply don't have enough time to clean your house, why not hire a house cleaning service. CLN - Professional Home Cleaning offers professional maids service who are ready to dust, vacuum and detail clean every room of your home.</p>
+        </div>
+        <div class="row">
+          <div class="col services__item">
+            <div class="services__item-container item1">
+              <svg class="services__item-icon" width="58" height="60" viewBox="0 0 58 60">
+                <use xlink:href="#serv1"></use>
+              </svg>
+              <p class="services__item-title">Residential/Apartment cleaning</p>
+              <p class="services__item-descr">Your home should be a place of comfort, security, and relaxation, as well as a source of pride in its appearance. Let us take some of the work and stress out of your time at home, or even free up some time to get away from home, by helping you keep your house fresh and clean.</p>
+            </div>
+          </div>
+          <div class="col services__item">
+            <div class="services__item-container item2">
+              <svg class="services__item-icon" width="52" height="45" viewBox="0 0 52 45">
+                <use xlink:href="#serv2"></use>
+              </svg>
+              <p class="services__item-title">Office cleaning</p>
+              <p class="services__item-descr">One thing that makes your office unproductive is illness. Daily cleaning and sanitation by a professional cleaning company like CLN can help to reduce the spread and growth of infection causing germs and bacteria, helping to keep your employees and co-workers healthy, happy, and productive.</p>
+            </div>
+          </div>
+          <div class="col services__item">
+            <div class="services__item-container item3">
+              <svg class="services__item-icon" width="59" height="51" viewBox="0 0 59 51">
+                <use xlink:href="#serv3"></use>
+              </svg>
+              <p class="services__item-title">Vacation rental</p>
+              <p class="services__item-descr">You want to ensure your vacation home is clean and neat when you rent out your beautiful home. We can help clean up before new rental tenant arrives and after they leave. We will make it look spotless to make it feel home for new tenants.</p>
+            </div>
+          </div>
+          <div class="col services__item">
+            <div class="services__item-container item4">
+              <svg class="services__item-icon" width="59" height="58" viewBox="0 0 59 58">
+                <use xlink:href="#serv4"></use>
+              </svg>
+              <p class="services__item-title">Move in/out</p>
+              <p class="services__item-descr">Moving is stressful enough. Let us clean up after any previous occupants or construction clean up. We can also clean up after you’ve left to ensure you get that security deposit back or that your house looks great for real estate showings.</p>
+            </div>
+          </div>
+        </div>
+        <p class="services__bottom-text">Professional Home Cleaning offers household cleaning services for customers who don’t have enough time to get everything done:<br/><a href="tel:+1(111)1111111">(111) 111-11-11</a></p>
+      </div>
+    </section>
+    <!--our services end-->
+    <!--testimonials-->
+    <section class="testim sect menu-spy" id="testim">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">Testimonials for our cleaners</h3>
+        </div>
+        <div class="testim__slider">
+          <div class="testim__item col">
+            <div class="testim__item-container"><img class="testim__item-photo" src="img/testim/1.jpg" alt="CLN"/>
+              <p class="testim__item-name">Ladonna L.</p>
+              <p class="testim__item-text">She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!</p>
+            </div>
+          </div>
+          <div class="testim__item col">
+            <div class="testim__item-container"><img class="testim__item-photo" src="img/testim/1.jpg" alt="CLN"/>
+              <p class="testim__item-name">Ladonna L.</p>
+              <p class="testim__item-text">She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!</p>
+            </div>
+          </div>
+          <div class="testim__item col">
+            <div class="testim__item-container"><img class="testim__item-photo" src="img/testim/1.jpg" alt="CLN"/>
+              <p class="testim__item-name">Ladonna L.</p>
+              <p class="testim__item-text">She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!</p>
+            </div>
+          </div>
+          <div class="testim__item col">
+            <div class="testim__item-container"><img class="testim__item-photo" src="img/testim/1.jpg" alt="CLN"/>
+              <p class="testim__item-name">Ladonna L.</p>
+              <p class="testim__item-text">She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!She was excellent, pleasant, calming, great energy and did an excellent job cleaning! She was excellent, pleasant, calming, great energy and did an excellent job cleaning!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--testimonials end-->
+    <!--faq-->
+    <section class="faq sect menu-spy" id="faq">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">FAQ</h3>
+          <p class="section-title__subtitle">CLN - Professional Home Cleaning offers household cleaning services for customers who don’t have enough time to get everything done. If you are feeling stressed and overwhelmed or simply don't have enough time to clean your house.</p>
+        </div>
+        <div class="faq__item">
+          <button class="faq__item-btn">Do I need to provide cleaning supplies?</button>
+          <p class="faq__item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="faq__item">
+          <button class="faq__item-btn">Do I need to provide cleaning supplies?</button>
+          <p class="faq__item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="faq__item">
+          <button class="faq__item-btn">Do I need to provide cleaning supplies?</button>
+          <p class="faq__item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="faq__item">
+          <button class="faq__item-btn">Do I need to provide cleaning supplies?</button>
+          <p class="faq__item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="faq__item">
+          <button class="faq__item-btn">Do I need to provide cleaning supplies?</button>
+          <p class="faq__item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
+    </section>
+    <!--faq end-->
+    <!--bottom form-->
+    <div class="bottom-form bg-cover sect" id="bottom-form">
+      <div class="container">
+        <p class="bottom-form__title">How frequent you want a cleaning?</p>
+        <div class="bottom-form__container">
+          <div class="bottom-form__first-step">
+            <button class="main-btn" id="bottom-btn" data-freq="One-Time">One-Time</button><span>Or</span>
+            <select class="main-btn" id="bottom-select">
+              <option selected="selected" disabled="disabled">Recurring</option>
+              <option>Weekly</option>
+              <option>Every 2 Weeks</option>
+              <option>Every 4 Weeks</option>
+            </select>
+          </div>
+          <div class="main-slider__form bottom-form__second-step">
+            <select class="main-slider__select location">
+              <option selected="selected">Los Angeles</option>
+              <option>San Diego</option>
+              <option>San Francisco</option>
+              <option>Orange County</option>
+            </select>
+            <select class="main-slider__select size">
+              <option selected="selected">Studio</option>
+              <option>1 Bedroom</option>
+              <option>2 Bedroom</option>
+              <option>3 Bedroom</option>
+              <option>4 Bedroom</option>
+              <option>5 Bedroom</option>
+            </select>
+            <select class="main-slider__select type">
+              <option selected="selected">Standard (2 hours)</option>
+              <option>Standard Plus (2,5-3 hours)</option>
+              <option>Deep Clean (4,5-5 hours)</option>
+              <option>Moving In/Out (4,5-5 hours)</option>
+            </select><a class="main-btn main-form__next" href="form-page.html" data-id="bottom form" data-freq="" id="bottom-next">NEXT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--bottom form end-->
+    <!--contact us-->
+    <section class="contacts sect top menu-spy" id="contacts">
+      <div class="container">
+        <div class="section-title">
+          <h3 class="section-title__main">Contact us</h3>
+        </div>
+        <div class="row">
+          <div class="col contacts__item"><img class="contacts__item-img" src="img/contact/call.jpg" alt="CLN"/>
+            <p class="contacts__item-title">Call center</p>
+            <p class="contacts__item-text">Contact us today for quality, thorough housekeeping services...</p><a class="contacts__item-link" href="tel:+1(111)1111111">(111) 111-11-11</a>
+          </div>
+          <div class="col contacts__item"><img class="contacts__item-img" src="img/contact/address.jpg" alt="CLN"/>
+            <p class="contacts__item-title">Address</p>
+            <p class="contacts__item-text">Contact us today for quality, thorough housekeeping services...</p><a class="contacts__item-link sm-scr" href="#map">6121 Sunset Blvd, Los Angeles, CA 90028</a>
+          </div>
+          <div class="col contacts__item"><img class="contacts__item-img" src="img/contact/support.jpg" alt="CLN"/>
+            <p class="contacts__item-title">Electronic support</p>
+            <p class="contacts__item-text">Please feel free to write an email to us or to use our electronic ticketing system</p><a class="contacts__item-link" href="mailto:los@clnprofhomecleaning.com">los@clnprofhomecleaning.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map" id="map"></div>
+    </section>
+    <!--contact us end-->
+    <!--footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col footer__logo"><a class="sm-scr" href="#home"><img src="img/logo.svg" alt="CLN"/></a></div>
+          <div class="col footer__contacts"><a class="footer__contacts-item" href="tel:+1(111)1111111">(111) 111-11-11</a><br/><a class="footer__contacts-item sm-scr" href="#map">6121 Sunset Blvd, Los Angeles, CA 90028</a></div>
+          <div class="col footer__copyright">
+            <p class="footer__copyright-text">©2017 CLN - Professional Home Cleaning</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="dist/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="dist/jquery.formstyler.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdwLvYgUv6FWg8ZC88IbvKchEq25L0v_Y"></script>
+  </body>
+</html>
